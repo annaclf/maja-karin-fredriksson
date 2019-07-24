@@ -1,0 +1,2 @@
+const tour = [{"day":"VIE","date":"20181026","club":"CAVAS DISCO","city":"PAMPLONA","link":[{"url":"https:\/\/entradium.com\/entradas\/concierto-ganglios-cavas-disco-pamplona","text":"ANTICIPADAS"}]},{"day":"VIE ","date":"20181207","club":"LAVA","city":"VALLADOLID","link":[]},{"day":"SAB","date":"20181208","club":"UNIVERSONORO","city":"PALENCIA","link":[]}];
+export default tour;

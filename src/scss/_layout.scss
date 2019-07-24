@@ -1,0 +1,270 @@
+h1, h2, h3{
+  font-family: 'Trykker', serif;
+}
+h2{
+    margin-top: 2rem;
+    padding: 0;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  color: $primary-color;
+  &:hover{
+    color: $dark-red;
+  }
+}
+.read-more{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.to-top{
+  right: 1rem;
+  bottom: 1rem;
+  position: fixed;
+  cursor: pointer;
+  &:hover{
+    color: $dark-red;
+  }
+}
+img{
+  max-width: 100%;
+  min-width:100%;
+}
+.social ul{
+  position: relative;
+    display:flex;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 1rem;
+    li{
+      padding-right: 10px;
+    }
+}
+// .site-footer{
+//   margin-top: 1rem;
+//   padding: 1rem;
+//   background: #fff;
+//   h2{
+//     margin-top: 0;
+//   }
+//   position: fixed;
+//   bottom: 0;
+//   text-align: center;
+//   width: 100%;
+// }
+.container{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+.section.full-section{
+  flex-basis: 100%;
+}
+.block-title{
+  margin-top:33px;
+  padding-top: 30px;
+  color: $primary-color;
+}
+.block-subtitle{
+  margin-top:0;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed $primary-color;
+  margin-bottom: 1rem;
+  color: $primary-color;
+}
+.row{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.block-content{
+  line-height: 1.5;
+}
+
+.social-media{
+  a{
+    padding: 0;
+  }
+}
+
+.tour{
+  margin-top:20px;
+  margin-bottom: 100px;
+}
+.tour-grid{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  border-bottom: 1px solid $border-color;
+  padding: 10px 0;
+  font-size: 1rem;
+  &.title{
+    background: none;
+    display: block;
+    border-bottom: none;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  p{
+    margin: 0;
+    font-weight: 800;
+    &.place{
+      color: #d1fdff;
+    }
+    span{
+      display: block;
+      width: 100%;
+    }
+  }
+  a{
+    border:none;
+    background:none;
+    color: $primary-color;
+    padding: 5px;
+    transition: .2s;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+
+.social-media{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  a{
+    text-align: left;
+  }
+}
+
+header{
+  text-align: center;
+  height: 37vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  h1{
+    font-size: 2.2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'lato';
+    color: white;
+    line-height: 0.8;
+    span{
+      display: block;
+      letter-spacing: normal;
+    }
+  }
+  // top:0;
+  // left: 0;
+  // position: absolute;
+  // width: 100%;
+  background:url(../img/intro-bg-maja.jpg) no-repeat center center;
+  background-size: 100%;
+}
+section{
+  margin-bottom: 1rem;
+  h2{
+    margin: 0 0 1rem;
+  }
+}
+.card-section:last-child{
+  display: none;
+}
+.section__music{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.push-down{
+  margin-top: 2rem;
+  margin-bottom: 100px;
+}
+@media (min-width: 375px){
+  header{
+    height: 30vh;
+  }
+}
+@media (min-width: 556px){
+
+  .card-section:last-child{
+    display: block;
+  }
+  .section-wrapper, .projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    section{
+      margin-bottom: 0;
+    }
+  }
+  .tour-grid{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:left;
+    align-items: center;
+    p{
+      width:25%;
+      span{
+        color: $primary-color;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  header{
+    height: 30vh;
+    h1{
+      font-size: 4rem;
+      letter-spacing: 3px;
+    }
+  }
+}
+@media (min-width: 768px){
+  header{
+    height: 50vh;
+  }
+  .row .col-2{
+    width:50%;
+    p{
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1040px){
+  header{
+    height: 80vh;
+    h1{
+      font-size: 6rem;
+    letter-spacing: 5px;
+    }
+  }
+}
+
+@media (min-width: 1500px){
+  header{
+    height: 95vh;
+    h1{
+      font-size: 6rem;
+      letter-spacing: 5px;
+      span{
+        letter-spacing: normal;
+      }
+    }
+  }
+  // .push-down{
+  //   margin-top: 100vh;
+  // }
+}
